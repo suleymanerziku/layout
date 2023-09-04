@@ -1,7 +1,23 @@
 import 'package:flutter/material.dart';
+import 'package:layout/mycontainer.dart';
+// import 'package:layout/mycontainer.dart';
 
 void main() {
-  runApp(const MainApp());
+  runApp(MaterialApp(
+    home: Scaffold(
+      backgroundColor: Colors.grey[900],
+      appBar: AppBar(
+        title: const Text(
+          'Layouts',
+          style: TextStyle(
+            color: Colors.white,
+          ),
+        ),
+        backgroundColor: Colors.grey[800],
+      ),
+      body: const MyContainer(),
+    ),
+  ));
 }
 
 class MainApp extends StatelessWidget {
@@ -9,12 +25,6 @@ class MainApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
-      home: Scaffold(
-        body: Center(
-          child: Text('Hello World!'),
-        ),
-      ),
-    );
+    return const Placeholder();
   }
 }
