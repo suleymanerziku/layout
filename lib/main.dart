@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:layout/mycontainer.dart';
+// import 'package:layout/mycontainer.dart';
+import 'package:layout/mygrid.dart';
 // import 'package:layout/mycontainer.dart';
 
 void main() {
@@ -15,7 +16,7 @@ void main() {
         ),
         backgroundColor: Colors.grey[800],
       ),
-      body: const MyContainer(),
+      body: const MyGrid(),
     ),
   ));
 }
